@@ -7,3 +7,34 @@ a.button {
     text-decoration: none;
     color: initial;
 }
+
+html, body {
+    height: 100%; /*Needed to get container fill whole page*/
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+#wrapper {
+    background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    /*background-image: linear-gradient(to bottom, #315481, #918e82 100%);*/
+    /*width: 100%;*/
+    width: 100%;
+    height: 100%;
+}
+
+.tallBox {
+    background-color: darkgrey;
+    color: white;
+    padding-top: 7.5%;
+    height: 25%;
+    padding-bottom: 7.5%;
+    margin:auto;
+    font-size: 10vw;
+}
