@@ -7,3 +7,6 @@ Router.route('/found');
 
 if (Meteor.isClient) {
 }
+
+if (Meteor.isServer) {
+}
