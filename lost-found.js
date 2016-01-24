@@ -21,15 +21,20 @@ if (Meteor.isClient) {
 
   Template.found.helpers({
       found: function () {
+          console.log(Found.find({}).count());
           return Found.find({});
       }
   });
 
   Template.lost.helpers({
+      found: function () {
+          return Found.find({});
+      },
+      
       lost: function() {
           return Lost.find({});
       }
-  })
+  });
 
   Template.found.events({
     "submit .foundItem": function (event) {
@@ -48,10 +53,10 @@ if (Meteor.isClient) {
           type: type,
           location: text,
         //   dateFound: date,
-          description: description
+          description: description,
         //   createdAt: new Date(), //Current time
-        //   owner: Meteor.userId(), // _id of logged in user
-        //   username: Meteor.user().username
+           owner: Meteor.userId(), // _id of logged in user
+           username: Meteor.user().username
       });
 
       event.target.location.value = "";
@@ -72,7 +77,9 @@ if (Meteor.isClient) {
             Lost.insert({
                 type: type,
                 location: location,
-                description: description
+                description: description,
+                owner: Meteor.userId(), // _id of logged in user
+                username: Meteor.user().username
             });
 
             event.target.location.value = "";
