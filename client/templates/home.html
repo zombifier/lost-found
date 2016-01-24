@@ -1,10 +1,14 @@
 <template name="home">
     <div id="home">
-        <div class="container" id="wrapper">
-
-            <div class="col-xs-5 tallBox" style="cursor: pointer;" onclick="window.location='lost'">Lost</div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-5 tallBox" style="cursor: pointer;" onclick="window.location='found'">Found</div>
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 tallBox" style="cursor: pointer;" onclick="window.location='lost'">Lost</div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 tallBox" style="cursor: pointer;" onclick="window.location='found'">Found</div>
+            <div class="col-xs-1"></div>
         </div>
     </div>
 </template>
