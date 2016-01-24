@@ -5,6 +5,7 @@ A mobile program that was created using HTML, CSS, and Javascript. The library t
 The program is currently a work in progress, in an attempt to help WPI students find lost items
 
 Compile it as so:
+
 Android:
 meteor run android-device --mobile-server wpilostandfound.meteor.com
 
