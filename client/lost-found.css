@@ -8,8 +8,37 @@ a.button {
     color: initial;
 }
 
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 5vw;
+}
+
+input, textarea, select {
+    outline:none;
+    text-align: center;
+    opacity: 0.4;
+    border-bottom: 5px solid black;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    vertical-align: center;
+    font-size: 10vw;
+}
+
+select {
+    font-size: 5vw;
+}
+
 html, body {
     height: 100%; /*Needed to get container fill whole page*/
+}
+
+#list {
+    height: 20px;
+    weight: 100%;
+    text-align: center;
+    background-color: lightgrey;
 }
 
 .navbar {
@@ -20,6 +49,7 @@ html, body {
     background-image: linear-gradient(to bottom, #315481, #918e82 100%);
     width: 100%;
     height: 100%;
+    overflow:scroll;
 }
 
 .tallBox {
@@ -27,9 +57,14 @@ html, body {
     /*background-image: linear-gradient(to top, #A186E8, #E89A0C 15%);*/
     border-radius: 10px;
     /*color: darkgrey;*/
-    margin:auto;
     height: 25%;
     text-align: center;
+    vertical-align: center;
     margin:auto;
     font-size: 10vw;
+}
+
+.space {
+    width:100%;
+    height:50px;
 }

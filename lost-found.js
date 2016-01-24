@@ -40,18 +40,15 @@ if (Meteor.isClient) {
 
       var type = event.target.types.value;
       var text = event.target.location.value;
-    //   var date = event.target.date.value;
+      var date = event.target.date.value;
       var description = event.target.description.value;
-    //   console.log(event.target.description.value);
-      // Insert a  into the collection
+
       Found.insert({
           type: type,
           location: text,
-        //   dateFound: date,
-          description: description
-        //   createdAt: new Date(), //Current time
-        //   owner: Meteor.userId(), // _id of logged in user
-        //   username: Meteor.user().username
+          dateFound: date,
+          description: description,
+          username: Meteor.user().username
       });
 
       event.target.location.value = "";
@@ -66,13 +63,15 @@ if (Meteor.isClient) {
 
             var type = event.target.types.value;
             var location = event.target.location.value;
-            //var date = event.target.date.value;
+            var date = event.target.date.value;
             var description = event.target.description.value;
 
             Lost.insert({
-                type: type,
-                location: location,
-                description: description
+                  type: type,
+                  location: text,
+                  dateFound: date,
+                  description: description,
+                  username: Meteor.user().username
             });
 
             event.target.location.value = "";
