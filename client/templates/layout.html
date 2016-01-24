@@ -1,6 +1,6 @@
 <template name="layout">
-  <div class="container">
-    <header>
+  <div class="container" style="width:100%;">
+    <header style="width:100%;">
       {{> nav }}
     </header>
     {{> yield}}
@@ -9,7 +9,7 @@
 
 
 <template name='nav'>
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation" style="width:100%;">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pages">
@@ -29,9 +29,7 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
       </nav>
-    {{> loginButtons}}
 </template>
-        <!-- {{> navBrand}} -->
 
 <template name="navBrand">
   <a class="navbar-brand" href="/">Home</a>
@@ -41,6 +39,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="lost">Lost</a></li>
     <li><a href="found">Found</a></li>
+    <li class="white">{{> loginButtons}}</li>
   <!-- <li class="{{ isActive 'lost' }}">
     <a href="/lost">Lost</a>
   </li>
