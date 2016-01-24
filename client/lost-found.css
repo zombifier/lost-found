@@ -1,11 +1,22 @@
 /* CSS declarations go here */
+body, h1 {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     color: initial;
+}
+
+.white {
+    text-decoration: none;
+    color:white;
+    background-color: black;
 }
 
 h2 {
