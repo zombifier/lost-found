@@ -7,41 +7,45 @@
   </div>
 </template>
 
+
 <template name='nav'>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        {{> navBrand}}
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          {{> navItems}}
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  {{> loginButtons}}
+    <nav class="navbar navbar-inverse" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pages">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">WPI Lost and Found</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="pages">
+              <ul class="nav navbar-nav">
+                  {{> navItems}}
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </nav>
+    {{> loginButtons}}
 </template>
+        <!-- {{> navBrand}} -->
 
 <template name="navBrand">
   <a class="navbar-brand" href="/">Home</a>
 </template>
 
 <template name='navItems'>
-  <li class="{{ isActive 'lost' }}">
+    <li><a href="/">Home</a></li>
+    <li><a href="settings">Settings</a></li>
+    <li><a href="lost">Lost</a></li>
+    <li><a href="found">Found</a></li>
+  <!-- <li class="{{ isActive 'lost' }}">
     <a href="/lost">Lost</a>
   </li>
   <li class="{{ isActive 'found' }}">
     <a href="/found">Found</a>
-  </li>
+  </li> -->
 </template>
-
-

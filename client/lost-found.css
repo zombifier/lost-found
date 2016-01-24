@@ -16,25 +16,20 @@ html, body {
     border-radius: 0px;
 }
 
-#wrapper {
+.container {
     background-image: linear-gradient(to bottom, #315481, #918e82 100%);
     width: 100%;
     height: 100%;
 }
 
-#home {
-    /*background-image: linear-gradient(to bottom, #315481, #918e82 100%);*/
-    /*width: 100%;*/
-    width: 100%;
-    height: 100%;
-}
-
 .tallBox {
-    background-color: darkgrey;
-    color: white;
-    padding-top: 7.5%;
+    background-image: linear-gradient(to top, #FFE924, #E89A0C 15%);
+    /*background-image: linear-gradient(to top, #A186E8, #E89A0C 15%);*/
+    border-radius: 10px;
+    /*color: darkgrey;*/
+    margin:auto;
     height: 25%;
-    padding-bottom: 7.5%;
+    text-align: center;
     margin:auto;
     font-size: 10vw;
 }
