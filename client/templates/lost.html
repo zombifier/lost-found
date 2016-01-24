@@ -1,3 +1,29 @@
 <template name="lost">
-    <h2>Lost</h2>
-</template>
+    <h2>Please enter item information</h2>
+    <form class="lostItem">
+        <select class="types" id="types">
+            <option value="clothing">Clothing</option>
+            <option value="bottle">Water Bottles</option>
+            <option value="stationary">Stationary</option>
+            <option value="flash">Flash drives</option>
+            <option value="phones">Phones</option>
+            <option value="notebook">Notebooks</option>
+            <option value="other">Other</option>
+        </select>
+
+        <input type="text" name="location" placeholder="location">
+        <input type="date" name="date" placeholder="date">
+        <textarea name="description" rows="10" cols="30" > Description</textarea>
+        <input type="submit" value="Submit">
+    </form>
+    test
+    <ul>
+        {{#each found}}
+            {{> item}}
+        {{/each}}
+    </ul>
+    test
+
+    Tasks.find({}).count()
+    Tasks.find({}).fetch()[0]._id
+</template><template name="item">    <li>{{type}}</li></template>
