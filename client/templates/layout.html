@@ -29,6 +29,7 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
       </nav>
+      <div style="text-decoration: none; color: black; z-index: 2; top: 10px; right: 250px; font-size: 25px;">{{> loginButtons}}</div>
 </template>
 
 <template name="navBrand">
@@ -39,11 +40,4 @@
     <li><a href="/">Home</a></li>
     <li><a href="lost">Lost</a></li>
     <li><a href="found">Found</a></li>
-    <li class="white">{{> loginButtons}}</li>
-  <!-- <li class="{{ isActive 'lost' }}">
-    <a href="/lost">Lost</a>
-  </li>
-  <li class="{{ isActive 'found' }}">
-    <a href="/found">Found</a>
-  </li> -->
 </template>

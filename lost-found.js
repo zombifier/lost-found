@@ -30,7 +30,7 @@ if (Meteor.isClient) {
       found: function () {
           return Found.find({});
       },
-      
+
       lost: function() {
           return Lost.find({});
       }
@@ -55,6 +55,7 @@ if (Meteor.isClient) {
           description: description,
           username: Meteor.user().username
       });
+      alert("Submitted!");
 
       event.target.location.value = "";
     //   event.target.date.value = "";
@@ -78,6 +79,7 @@ if (Meteor.isClient) {
                   description: description,
                   username: Meteor.user().username
             });
+            alert("Thank you!");
 
             event.target.location.value = "";
             //event.target.date.value = "";
