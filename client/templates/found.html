@@ -1,3 +1,19 @@
 <template name="found">
-    <h2>Found</h2>
-</template>
+    <h2>Please enter item information</h2>
+    <form class="info">
+      <select class="types">
+        <option value="clothing">Clothing</option>
+        <option value="flash">Flash drives</option>
+        <option value="phones">Phones</option>
+        <option value="notebook">Notebooks</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <input type="text" name="location" placeholder="location">
+      <input type="date" name="date" placeholder="date">
+      <br>
+      <textarea name="description" rows="10" cols="30" >Description</textarea>
+      <br>
+      <input type="submit">
+      </form>
+</template>
