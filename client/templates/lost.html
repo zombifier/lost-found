@@ -1,7 +1,8 @@
 <template name="lost">
     {{#if currentUser}}
-    <h2>Please enter item information</h2>
+    <h2>Please enter item information to find your lost item.</h2>
     <form class="lostItem">
+        <div class="space"></div>
         <select class="types" id="types">
             <option value="clothing">Clothing</option>
             <option value="bottle">Water Bottles</option>
@@ -11,21 +12,24 @@
             <option value="notebook">Notebooks</option>
             <option value="other">Other</option>
         </select>
-
+        <div class="space"></div>
         <input type="text" name="location" placeholder="location">
+        <div class="space"></div>
         <input type="date" name="date" placeholder="date">
-        <textarea name="description" rows="10" cols="30" > Description</textarea>
+        <div class="space"></div>
+        <textarea name="description" rows="10" cols="30" >description</textarea>
+        <div class="space"></div>
         <input type="submit" value="Submit">
+        <div class="space"></div>
     </form>
     {{/if}}
     <ul>
-        {{#each found}}
-            {{> okay}}
+        {{#each found}} <!-- Noacess to found html-->
+            {{> item}}
         {{/each}}
     </ul>
 </template>
-<!--
+
 <template name="item">
-    <li>{{type}}</li>
+    <li id="list" style="margin-top: 2px;">{{type}}, at {{location}}, Date: {{dateFound}}, username: {{username}}</li>
 </template>
--->
