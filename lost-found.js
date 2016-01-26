@@ -24,6 +24,10 @@ if (Meteor.isClient) {
           console.log(Found.find({}).count());
           return Found.find({});
       }
+
+      lost: function() {
+          console.log(Lost.find({});
+      }
   });
 
   Template.lost.helpers({

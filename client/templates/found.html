@@ -20,14 +20,14 @@
         <textarea name="description" rows="10" cols="30" >description</textarea>
         <div class="space"></div>
         <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
-        <div class="space"></div> 
+        <div class="space"></div>
         <input type="submit" value="Submit">
         <div class="space"></div>
     </form>
     {{/if}}
     <h2>Thank you!</h2>
     <ul>
-        {{#each found}}
+        {{#each lost}}
             {{> okay}}
         {{/each}}
     </ul>
