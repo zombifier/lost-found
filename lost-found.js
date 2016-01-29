@@ -21,12 +21,11 @@ if (Meteor.isClient) {
 
   Template.found.helpers({
       found: function () {
-          console.log(Found.find({}).count());
           return Found.find({});
-      }
+      },
 
       lost: function() {
-          console.log(Lost.find({});
+          return Lost.find({});
       }
   });
 
