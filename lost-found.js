@@ -47,13 +47,13 @@ if (Meteor.isClient) {
       // Get value from form element
 
       var type = event.target.types.value;
-      var text = event.target.location.value;
+      var loc = event.target.location.value;
       var date = event.target.date.value;
       var description = event.target.description.value;
 
       Found.insert({
           type: type,
-          location: text,
+          location: loc,
           dateFound: date,
           description: description,
           username: Meteor.user().username
@@ -71,13 +71,13 @@ if (Meteor.isClient) {
             event.preventDefault();
 
             var type = event.target.types.value;
-            var location = event.target.location.value;
+            var loc = event.target.location.value;
             var date = event.target.date.value;
             var description = event.target.description.value;
 
             Lost.insert({
                   type: type,
-                  location: text,
+                  location: loc,
                   dateFound: date,
                   description: description,
                   username: Meteor.user().username
